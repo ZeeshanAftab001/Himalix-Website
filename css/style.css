@@ -29,6 +29,7 @@ h3 {
 }
 
 body {
+  /* font-family: "poppins", sans-serif; */
   font-family: "poppins", sans-serif;
   color: #101010;
   background-color: #ffffff;
@@ -75,7 +76,7 @@ body {
 /*header section*/
 .hero_area {
   height: 98vh;
-  background-image: url(../images/hero.jpg);
+  background-image: url(../images/mountain.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -124,6 +125,7 @@ a:focus {
 
 .navbar-brand,
 .navbar-brand:hover {
+  size: 100px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
@@ -157,14 +159,14 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 45px;
+  width: 90px;
 }
 
 .navbar-brand span {
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
-  font-family: "Ethnocentric";
+  font-family:"poppins", sans-serif;
 }
 
 .custom_nav-container {
@@ -229,7 +231,8 @@ a:focus {
 
 .hero_section .hero_btn-box a:hover {
   background-color: #ffffff;
-  color: #00ff00;
+  color: #bcd7f4;
+  /* color: #00ff00; */
 }
 
 .sub_page .about_section .about_container {
@@ -241,8 +244,9 @@ a:focus {
   margin-left: auto;
   margin-right: auto;
   padding: 75px 45px;
-  background-image: url(../images/about.jpg);
-  background-size: auto 100%;
+  background-image: url(../images/about1.png);
+  background-size: 300px;
+  /* background-size: auto 100%; */
   background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
@@ -268,14 +272,18 @@ a:focus {
   display: inline-block;
   padding: 14px 35px;
   background-color: transparent;
-  border: 1.5px solid #00ff00;
-  color: #00ff00;
-  color: #3cff3c;
+  border: 1.5px solid #bcd7f4;
+  /* border: 1.5px solid #00ff00; */
+  color: #bcd7f4;
+  /* color: #00ff00; */
+  /* color: #3cff3c; */
+  color: #bcd7f4;
   margin-top: 75%;
 }
 
 .about_section .detail a:hover {
-  background-color: #00ff00;
+  background-color: #9cb9d8;
+  /* background-color: #00ff00; */
   color: #ffffff;
 }
 
@@ -323,13 +331,17 @@ a:focus {
   display: inline-block;
   padding: 14px 35px;
   background-color: transparent;
-  border: 1.5px solid #00ff00;
-  color: #00ff00;
-  color: #3cff3c;
+  border: 1.5px solid #bcd7f4;
+  /* border: 1.5px solid #00ff00; */
+  color: #bcd7f4;
+  color:#bcd7f4;
+  /* color: #00ff00;
+  color: #3cff3c; */
 }
 
 .product_section a:hover {
-  background-color: #00ff00;
+  background-color: #bcd7f4;
+  /* background-color: #00ff00; */
   color: #ffffff;
 }
 
@@ -346,13 +358,13 @@ a:focus {
   display: inline-block;
   padding: 14px 35px;
   background-color: transparent;
-  border: 1.5px solid #00ff00;
-  color: #00ff00;
-  color: #3cff3c;
+  border: 1.5px solid #bcd7f4;
+  color: #bcd7f4;
+  color: #bcd7f4;
 }
 
 .why_section a:hover {
-  background-color: #00ff00;
+  background-color: #bcd7f4;
   color: #ffffff;
 }
 
@@ -495,7 +507,7 @@ a:focus {
 }
 
 .client_section .carousel-indicators li.active {
-  background-color: #46a102;
+  background-color: #bcd7f4;
 }
 
 .info_section {
@@ -586,6 +598,58 @@ a:focus {
 
 .footer_section a {
   color: #292929;
+}
+
+/* Cloud Styling */
+.cloud {
+  position: absolute;
+  background: url('images/clouds.png') no-repeat center;
+  background-size: contain;
+  width: 20vw;  /* Responsive width */
+  height: 10vw;
+  opacity: 0.8;
+}
+
+/* Individual Clouds */
+.cloud-1 {
+  top: 10%;
+  left: -30%;
+  animation: moveClouds 30s linear infinite;
+}
+
+.cloud-2 {
+  top: 30%;
+  left: -40%;
+  animation: moveClouds 40s linear infinite;
+}
+
+.cloud-3 {
+  top: 60%;
+  left: -50%;
+  animation: moveClouds 50s linear infinite;
+}
+
+/* Keyframes Animation */
+@keyframes moveClouds {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(120vw);
+    opacity: 1;
+  }
+}
+
+/* Ensure Mobile Responsiveness */
+@media (max-width: 768px) {
+  .cloud {
+    width: 30vw;
+    height: 15vw;
+  }
 }
 
 /* end footer section*/

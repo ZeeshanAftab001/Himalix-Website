@@ -1,6 +1,8 @@
 @media (max-width: 1120px) {
     .hero_area {
-        height: auto;
+        height: 98vh;
+        background-image: url(../images/1.png) !important;
+        background-size: cover;
     }
 
     .hero_btn-box {
@@ -30,12 +32,15 @@
     }
 
     .about_section .detail a {
-        margin: 25px auto 35px auto;
+        margin: 200px auto 20px auto;
+       
     }
 
     .about_section .detail a {
-
-        background-color: #00ff00;
+        margin-top: 300px;
+        background-color: #bcd7f4;
+        background-size: 100px;
+        
         color: #ffffff;
 
     }
